@@ -1,0 +1,10 @@
+name: presubmit
+on:
+  push:
+    branches: [ main ]
+jobs:
+  pre:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
