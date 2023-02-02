@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
     paths: 
-      - '*/**'            
+      - '**/**'            
       - '!config/**'    
       # - 'config/components/edge-iam-v2/targets'  
 jobs:
