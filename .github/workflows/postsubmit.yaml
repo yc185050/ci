@@ -8,6 +8,7 @@ on:
     - 'config/components/edge-iam-v2/targets'    # include config/components/edge-iam-v2/targets again
 jobs:
   ci:
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
