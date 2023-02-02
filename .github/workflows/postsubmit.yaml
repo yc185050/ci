@@ -1,7 +1,7 @@
 name: postsubmit
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
     - '*/**'             # include all
     - '!config/**'     # exclude config/**
