@@ -4,8 +4,8 @@ on:
     branches: [ main ]
     paths: 
       - '*/**'             # include all
-      # - '!config/**'     # exclude config/**
-      # - 'config/components/edge-iam-v2/targets'    # include config/components/edge-iam-v2/targets again
+      - '!config/**'     # exclude config/**
+      - 'config/components/edge-iam-v2/targets'    # include config/components/edge-iam-v2/targets again
 jobs:
   ci:
     runs-on: ubuntu-latest
