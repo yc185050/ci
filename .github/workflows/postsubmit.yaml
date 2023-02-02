@@ -5,7 +5,7 @@ on:
     paths: 
       - '**/**'            
       - '!config/**'    
-      # - 'config/components/edge-iam-v2/targets'  
+      - 'config/components/edge-iam-v2/targets'  
 jobs:
   ci:
     runs-on: ubuntu-latest
