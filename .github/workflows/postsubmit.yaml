@@ -1,0 +1,13 @@
+name: postsubmit
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - '*/**'             # include all
+    - '!config/**'     # exclude config/**
+    - 'config/components/edge-iam-v2/targets'    # include config/components/edge-iam-v2/targets again
+jobs:
+  ci:
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
