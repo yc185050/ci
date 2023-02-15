@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     # Set job outputs to values from filter step
     outputs:
-      ifonlyiam: ${{ steps.filter.outputs.ifonlyiam }}
+      notonlyiam: ${{ steps.filter.outputs.notonlyiam }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
