@@ -19,6 +19,7 @@ jobs:
         filters: |
           notonlyiam:
             - '!config/components/edge-iam-v2/targets/**'
+            - 'config/anthos/manifests/namespaces/edge/store/edge-iam-v2'
   ci:
     needs: changes
     runs-on: ubuntu-latest
