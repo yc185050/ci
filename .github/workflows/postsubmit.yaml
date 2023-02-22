@@ -10,7 +10,7 @@ jobs:
     # Set job outputs to values from filter step
     outputs:
       notonlyiam: ${{ steps.filter.outputs.notonlyiam }}
-      notonlyconfig: ${{ steps.filter.outputs.notonlyconfig }}
+      notonlyiamconfig: ${{ steps.filter.outputs.notonlyiamconfig }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
