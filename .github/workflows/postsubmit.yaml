@@ -21,7 +21,7 @@ jobs:
           notonlyconfig:
             - '!config/**'
           notonlyiamconfig:
-            - '!(config/components/edge-iam-v2/targets/*|config/anthos/manifests/namespaces/edge/store/edge-iam-v2/*)'
+            - '!(config/components/edge-iam-v2/targets/**|config/anthos/manifests/namespaces/edge/store/edge-iam-v2/*)'
   ci:
     needs: changes
     runs-on: ubuntu-latest
